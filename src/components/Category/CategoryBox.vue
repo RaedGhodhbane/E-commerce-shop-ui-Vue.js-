@@ -6,7 +6,11 @@
   <div class="card-body">
     <h5 class="card-title">{{ category.categoryName }}</h5>
     <p class="card-text">{{ category.description }}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="buttons">
+    <a href="#" class="btn btn-primary"> Go somewhere </a>
+    <a href="#" class="btn btn-danger delete"> Delete </a>
+    </div>
+
   </div>
   </div>
 </template>
@@ -24,5 +28,11 @@ export default defineComponent({
 <style scoped>
 .card-img-top {
     object-fit: cover;
+}
+.delete {
+  @apply ml-5;
+}
+.buttons {
+  @apply pt-2;
 }
 </style>
