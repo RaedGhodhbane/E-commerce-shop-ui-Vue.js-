@@ -10,18 +10,18 @@
       <div class="col-6">
         <form class="category">
           <div>
-              <label class="text-name"> Name </label>
+              <label class="text-name"> {{$t('Name')}} </label>
               <input type="text" class="input" v-model="categoryName">
           </div>
           <div>
-              <label class="text-name"> Description </label>
+              <label class="text-name"> {{$t('Description')}} </label>
               <textarea type="text" class="input" v-model="description"/>
           </div>
           <div>
-              <label class="text-name"> Image </label>
+              <label class="text-name"> {{$t('Image')}} </label>
               <input type="text" class="input" v-model="imageUrl">
           </div>
-          <button type="button" class="button" @click="addCategory"> Submit </button>
+          <button type="button" class="button" @click="addCategory"> {{$t('Submit')}} </button>
       </form>
       </div>
       <div class="col-3"></div>

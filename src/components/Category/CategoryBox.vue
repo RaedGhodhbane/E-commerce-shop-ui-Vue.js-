@@ -7,8 +7,8 @@
     <h5 class="card-title">{{ category.categoryName }}</h5>
     <p class="card-text">{{ category.description }}</p>
     <div class="buttons">
-    <a href="#" class="btn btn-primary"> Go somewhere </a>
-    <a href="#" class="btn btn-danger delete"> Delete </a>
+    <a href="#" class="btn btn-primary"> {{$t('Go somewhere')}} </a>
+    <a href="#" class="btn btn-danger delete"> {{$t('Delete')}} </a>
     </div>
 
   </div>

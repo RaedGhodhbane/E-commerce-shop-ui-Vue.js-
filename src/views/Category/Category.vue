@@ -2,9 +2,10 @@
   <div class="container">
       <div class="row">
       <div class="col-12 text-center">
-      <h3 class="pt-3"> Our Categories </h3>
+      <Header/>
+      <h3 class="pt-3"> {{$t('OurCategories')}} </h3>
       <router-link :to="{name :'AddCategory'}">
-          <button class="button"> Add Category </button>
+          <button class="button">{{$t('AddCategory')}}</button>
       </router-link>
   </div>
   </div>
@@ -19,13 +20,14 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-
 import axios from 'axios';
+
+import Header from '../../components/Header.vue';
 import CategoryBox from '../../components/Category/CategoryBox.vue';
 
 export default defineComponent({
   name: 'Category',
-  components: { CategoryBox },
+  components: { CategoryBox, Header },
   data() {
     return {
       baseURL: 'https://limitless-lake-55070.herokuapp.com',
