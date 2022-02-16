@@ -4,11 +4,11 @@
           <div class="col-9"></div>
           <div class="col-3">
               <select class="custom-select" v-model="lang" @change="handleChange($event)">
-                  <option value="en"> English </option>
-                  <option value="fr"> French </option>
-                  <option value="es"> Spanish </option>
-                  <option value="ita"> Italian </option>
-                  <option value="deut"> Deutsch </option>
+                  <option value="en"> {{$t('language1')}} </option>
+                  <option value="fr"> {{$t('language2')}} </option>
+                  <option value="es"> {{$t('language3')}} </option>
+                  <option value="ita"> {{$t('language4')}} </option>
+                  <option value="deut"> {{$t('language5')}} </option>
               </select>
           </div>
       </div>

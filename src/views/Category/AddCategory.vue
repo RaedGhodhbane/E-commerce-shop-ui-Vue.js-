@@ -10,18 +10,18 @@
       <div class="col-6">
         <form class="category">
           <div>
-              <label class="text-name"> {{$t('Name')}} </label>
+              <label class="text-name"> {{$t('name')}} </label>
               <input type="text" class="input" v-model="categoryName">
           </div>
           <div>
-              <label class="text-name"> {{$t('Description')}} </label>
+              <label class="text-name"> {{$t('description')}} </label>
               <textarea type="text" class="input" v-model="description"/>
           </div>
           <div>
-              <label class="text-name"> {{$t('Image')}} </label>
-              <input type="text" class="input" v-model="imageUrl">
+              <label class="text-name"> {{$t('image')}} </label>
+              <input type="text" class="input" @click="i18ncall" v-model="imageUrl">
           </div>
-          <button type="button" class="button" @click="addCategory"> {{$t('Submit')}} </button>
+          <button type="button" class="button" @click="addCategory"> {{$t('submit')}} </button>
       </form>
       </div>
       <div class="col-3"></div>
@@ -72,6 +72,9 @@ export default defineComponent({
         .catch((err) => {
           console.log(err);
         });
+    },
+    i18ncall() {
+      console.log(this.$t('image'));
     },
 
   },

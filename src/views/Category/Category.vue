@@ -3,9 +3,9 @@
       <div class="row">
       <div class="col-12 text-center">
       <Header/>
-      <h3 class="pt-3"> {{$t('OurCategories')}} </h3>
+      <h3 class="pt-3"> {{$t('ourCategories')}} </h3>
       <router-link :to="{name :'AddCategory'}">
-          <button class="button">{{$t('AddCategory')}}</button>
+          <button class="button">{{$t('addCategory')}}</button>
       </router-link>
   </div>
   </div>
