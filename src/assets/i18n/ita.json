@@ -12,9 +12,9 @@
     "image": "Immagine",
     "text1" : "Pagina iniziale",
     "text2" : "Questa è una pagina di informazioni",
-    "option1" : "Inglese",
-    "option2" : "Francese",
-    "option3" : "Spagnolo",
-    "option4" : "Italiano",
-    "option5" : "Tedesco"
+    "language1" : "Inglese",
+    "language2" : "Francese",
+    "language3" : "Spagnolo",
+    "language4" : "Italiano",
+    "language5" : "Tedesco"
 }

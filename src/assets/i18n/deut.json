@@ -12,9 +12,9 @@
     "image": "Bild",
     "text1" : "Startseite",
     "text2" : "Dies ist eine About-Seite",
-    "option1" : "Englisch",
-    "option2" : "Französisch",
-    "option3" : "Spanisch",
-    "option4" : "Italienisch",
-    "option5" : "Deutsch"
+    "language1" : "Englisch",
+    "language2" : "Französisch",
+    "language3" : "Spanisch",
+    "language4" : "Italienisch",
+    "language5" : "Deutsch"
 }
