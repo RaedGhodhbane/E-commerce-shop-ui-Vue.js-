@@ -1,10 +1,16 @@
 <template>
   <div id="nav">
-    <router-link to="/">{{$t('home')}}</router-link> |
-    <router-link to="/about">{{$t('about')}}</router-link> |
-    <router-link to="/admin/category">{{$t('category')}}</router-link>
+    <router-link to="/">
+      {{ $t('home') }}
+    </router-link> |
+    <router-link to="/about">
+      {{ $t('about') }}
+    </router-link> |
+    <router-link to="/admin/category">
+      {{ $t('category') }}
+    </router-link>
   </div>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>

@@ -2,12 +2,14 @@
   "name": "e-commerce-ui",
   "version": "0.1.0",
   "private": true,
+  "description": "string",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "styleguide": "vue-styleguidist server",
-    "styleguide:build": "vue-styleguidist build"
+    "styleguide:build": "vue-styleguidist build",
+    "dev": "webpack-dev-server"
   },
   "dependencies": {
     "autoprefixer": "^9.8.8",
@@ -16,8 +18,9 @@
     "postcss": "^7.0.39",
     "sweetalert": "^2.1.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
-    "vue": "^3.0.0",
+    "vue": "^3.0.2",
     "vue-i18n": "^9.1.9",
+    "vue-loader": "next",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
@@ -30,15 +33,22 @@
     "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/compiler-sfc": "^3.2.31",
     "@vue/eslint-config-airbnb": "^5.0.2",
     "@vue/eslint-config-typescript": "^7.0.0",
+    "css-loader": "^6.6.0",
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^7.0.0",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.5.3",
     "typescript": "~4.1.5",
+    "url-loader": "^4.1.1",
     "vue-cli-plugin-styleguidist": "~4.44.15",
-    "vue-styleguidist": "^4.44.15"
+    "vue-styleguidist": "^4.44.15",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
   },
   "packageManager": "yarn@3.1.1"
 }
