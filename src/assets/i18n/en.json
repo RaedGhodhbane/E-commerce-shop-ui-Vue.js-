@@ -10,7 +10,7 @@
     "name": "Name",
     "description": "Description",
     "image": "Image",
-    "text1" : "Home page",
+    "text1" : "Home page {{aaa}}",
     "text2" : "This is an about page",
     "language1" : "English",
     "language2" : "French",

@@ -2,6 +2,9 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import Home from '../views/Home.vue';
 import AddCategory from '../views/Category/AddCategory.vue';
 import Category from '../views/Category/Category.vue';
+import Admin from '../views/Admin.vue';
+import Product from '../views/Product/Product.vue';
+import AddProduct from '../views/Product/AddProduct.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -26,6 +29,23 @@ const routes: Array<RouteRecordRaw> = [
     path: '/admin/category',
     name: 'Category',
     component: Category,
+  },
+  // Admin home page
+  {
+    path: '/admin',
+    name: 'Admin',
+    component: Admin,
+  },
+  {
+    path: '/admin/product',
+    name: 'Product',
+    component: Product,
+  },
+  // add product
+  {
+    path: '/admin/product/new',
+    name: 'AddProduct',
+    component: AddProduct,
   },
 ];
 

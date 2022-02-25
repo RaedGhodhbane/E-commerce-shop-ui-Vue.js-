@@ -1306,7 +1306,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.11.0, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4":
+"@babel/runtime@npm:^7.11.0, @babel/runtime@npm:^7.12.0, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.4":
   version: 7.17.2
   resolution: "@babel/runtime@npm:7.17.2"
   dependencies:
@@ -6147,6 +6147,7 @@ __metadata:
     eslint-plugin-import: ^2.20.2
     eslint-plugin-vue: ^7.0.0
     file-loader: ^6.2.0
+    i18next: ^21.6.12
     mini-css-extract-plugin: ^2.5.3
     postcss: ^7.0.39
     sweetalert: ^2.1.2
@@ -8427,6 +8428,15 @@ __metadata:
   version: 1.0.4
   resolution: "hyphenate-style-name@npm:1.0.4"
   checksum: 4f5bf4b055089754924babebaa23c17845937bcca6aee95d5d015f8fa1e6814279002bd6a9e541e3fac2cd02519fc76305396727066c57c8e21a7e73e7a12137
+  languageName: node
+  linkType: hard
+
+"i18next@npm:^21.6.12":
+  version: 21.6.12
+  resolution: "i18next@npm:21.6.12"
+  dependencies:
+    "@babel/runtime": ^7.12.0
+  checksum: 577ab7e5c5ec5d9f8c24aef3d85c1134fc78aa370a254a0412b1207f98a994dd70bac4b11b979658cd2f2c7a764b78ad08ec3824d5ed900b51ca00d5c596c7df
   languageName: node
   linkType: hard
 

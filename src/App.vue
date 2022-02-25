@@ -1,4 +1,5 @@
 <template>
+    <Navbar/>
   <div id="nav">
     <router-link to="/">
       {{ $t('home') }}
@@ -10,9 +11,45 @@
       {{ $t('category') }}
     </router-link>
   </div>
-  <router-view />
+  <router-view :baseURL="baseURL" :categories="categories" :products="products"> </router-view>
 </template>
 
+<script lang="ts">
+import axios from 'axios';
+import { defineComponent } from 'vue';
+import Navbar from './components/Navbar.vue';
+
+export default defineComponent({
+  components: { Navbar },
+  data() {
+    return {
+      baseURL: 'https://limitless-lake-55070.herokuapp.com/',
+      products: [],
+      categories: [],
+    };
+  },
+  methods: {
+    async fetchData() {
+      // Api call to get all the categories
+
+      await axios.get(`${this.baseURL}category/`)
+        .then((res) => {
+          this.categories = res.data;
+        }).catch((err) => console.log('err', err));
+
+      // Api call to get all the products
+
+      await axios.get(`${this.baseURL}product/`)
+        .then((res) => {
+          this.products = res.data;
+        }).catch((err) => console.log('err', err));
+    },
+  },
+  mounted() {
+    this.fetchData();
+  },
+});
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
